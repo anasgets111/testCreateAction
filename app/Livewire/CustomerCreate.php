@@ -41,6 +41,6 @@ class CustomerCreate extends Component implements HasForms, HasActions
 
     public function render()
     {
-        return view('livewire.resource-create');
+        return view('livewire.customer-create');
     }
 }
