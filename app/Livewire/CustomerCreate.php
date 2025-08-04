@@ -34,7 +34,10 @@ class CustomerCreate extends Component implements HasForms, HasActions
             ->color('primary')
             ->slideOver()
             ->tooltip('Resource to store data')
-            ->closeModalByClickingAway()->createAnother(false)
+            // with create Another set to true, it will show create and create another buttons but not cancel button
+            // while with it set to false, it will not show any buttons
+            ->createAnother(false)
+            ->closeModalByClickingAway()
             ->closeModalByEscaping();
 
     }
